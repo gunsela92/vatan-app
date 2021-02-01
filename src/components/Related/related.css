@@ -1,0 +1,64 @@
+span {
+  top:3vh;
+  left: 15vw;
+  position: relative;
+  color: rgb(56, 56, 56);
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 2vw;
+  font-weight: 600;
+  user-select: none;
+}
+
+li.productGrid {
+  list-style: none;
+  border:1px solid lightgray;
+  height: 45vh;
+  width: 13vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align:center;
+}
+
+ul.productUl {
+  width: 65vw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  left: 12.5vw;
+  position: relative;
+  top: 3vh;
+}
+
+li.productGrid:hover {
+  border: 1px solid #1564C0;
+}
+
+li.productGrid img {
+  display: block;
+  margin: 0 auto;
+}
+
+.cartButton {
+  width: 100%;
+  left: 0;
+  position: absolute;
+  background: #5491d6;
+  color: white;
+  height: 6vh;
+  border: none;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.cartButton:hover {
+  background-color: white;
+  color: #5491d6;
+  border-top:    1px solid #5491d6;
+  border-right:  1px solid #5491d6;
+  border-left:   1px solid #5491d6;
+}
+
+.designProducts {
+  position: relative;
+  height: 100%;
+}
