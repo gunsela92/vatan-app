@@ -9,7 +9,7 @@ const Slider = () => {
   
   SwiperCore.use([Navigation, Pagination, Controller, Thumbs]);
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
-    const [controlledSwiper, setControlledSwiper] = useState(null);
+    const [controlledSwiper] = useState(null);
   
     const slides = [];
 
@@ -33,8 +33,6 @@ const Slider = () => {
           controller={{ control: controlledSwiper }}
           onSwiper={setThumbsSwiper}
           watchSlidesVisibility
-          onSwiper={setControlledSwiper}
-          tag="section"
           wrapperTag="ul"
           navigation
           pagination

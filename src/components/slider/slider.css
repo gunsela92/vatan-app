@@ -1,7 +1,7 @@
 .swiper-container {
   width: 85vw;
   height: 51vh;
-  background-color: #1564C0 !important;
+  background-color: #1564C0;
 }
 
 .swiper-pagination {
@@ -25,7 +25,7 @@
 }
 
 .swiper-slide:nth-child(1n) {
-  width: 43%;
+  width: 41%;
 }
 
 .swiper-slide:nth-child(2n), .swiper-slide:nth-child(3n) {

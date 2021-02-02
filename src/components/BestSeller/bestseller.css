@@ -1,0 +1,67 @@
+.bestSwiper {
+  height: 40vh;
+  max-width: 1400px;
+  width: 65vw;
+  left: 1%;
+  background-color: transparent;
+}
+
+.bestProducts {
+  top:5vh;
+  max-width: 1500px;
+  position: relative;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.bestProducts span {
+  top: 0vh;
+  margin-bottom: 3vh;
+  position: relative;
+  color: rgb(56, 56, 56);
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 1.5vw;
+  font-weight: 600;
+  user-select: none;
+}
+
+.allBest {
+  float: right;
+  font-size: 15px !important;
+  color: #1565BE !important;
+  top: 1vh !important;
+}
+
+.bestSellerGrid {
+  border: 1px solid gray;
+  height: 38vh;
+}
+
+.bestPrice {
+  top: 75%;
+  position: absolute;
+  color: rgb(21, 100, 192);
+  font-size: 1.5em;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.bestSellerGrid:hover .cartButton, .bestSellerGrid:hover .bestSellerBut {
+  cursor: pointer;
+  display: block;
+}
+
+.bestSellerBut {
+  float: left;
+  background: #1565BE;
+  height: 11.8%;
+  width: 20%;
+  position: absolute;
+  bottom: 0;
+  z-index: 9999;
+  color: white;
+  text-align: center;
+  display: none;
+}
