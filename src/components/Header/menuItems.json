@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Telefon",
+    "key": 1
+  },
+  {
+    "title": "Bilgisayar",
+    "key": 2
+  },
+  {
+    "title": "Bilgisayar Parçaları",
+    "key": 3
+  },
+  {
+    "title": "Fotoğraf & Kamera",
+    "key": 4
+  },
+  {
+    "title": "TV & Ev Elektroniği",
+    "key": 5
+  },
+  {
+    "title": "Ofis Malzemeleri",
+    "key": 6
+  },
+  {
+    "title": "Aksesuarlar",
+    "key": 7
+  },
+  {
+    "title": "Oyun & Hobi",
+    "key": 8
+  },
+  {
+    "title": "Ev Aletleri & Kişisel Bakım",
+    "key": 9
+  }
+]

@@ -9,7 +9,7 @@ const Related = () => {
     <div className="relatedProducts">
       <span>Öne çıkan ürünler</span>
       <span className="allRelated">
-        TÜM ÖNE ÇIKANLAR <FontAwesomeIcon icon={faArrowRight} size="m" />
+        TÜM ÖNE ÇIKANLAR <FontAwesomeIcon icon={faArrowRight} size="sm" />
       </span>
       <ul className="productUl">
         {relatedProducts.map((a) => (
@@ -21,28 +21,29 @@ const Related = () => {
                   src={a.img}
                   alt={a.title}
                 />
-              
-              <label
-                style={{
-                  top: "25%",
-                  position: "relative",
-                  fontSize: "10px",
-                  display: "block",
-                  color: "gray",
-                }}
-              >
-                {a.code}
-              </label>
-              <div
-                style={{
-                  padding: "20px",
-                  top: "25%",
-                  position: "relative",
-                  fontSize: "12px",
-                }}
-              >
-                {a.title}{" "}
-              </div></a>
+
+                <label
+                  style={{
+                    top: "25%",
+                    position: "relative",
+                    fontSize: "10px",
+                    display: "block",
+                    color: "gray",
+                  }}
+                >
+                  {a.code}
+                </label>
+                <div
+                  style={{
+                    padding: "20px",
+                    top: "25%",
+                    position: "relative",
+                    fontSize: "12px",
+                  }}
+                >
+                  {a.title}{" "}
+                </div>
+              </a>
               {a.samedayshipping && (
                 <div className="shipping">
                   <label>BUGÜN KARGODA</label>

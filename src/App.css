@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 1px 1px #ccc;
+  width: 85vw;
+  min-width: 300px;
+  background-color: #1564C0;
+  color: white;
+  margin: 0 auto;
+}
+
+.logo {
+  background-image: url("../src/assets/vatan-computer-logo.png");
+  height: 45px;
+  width: 130px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 8%;
+  position: relative;
+}
+
+.categoryBut {
+  font-family: Roboto,Arial,sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  left: 23%;
+  margin-left: 2%;
+  float: left;
+  background: transparent;
+  color: white;
+  border: none;
+}
