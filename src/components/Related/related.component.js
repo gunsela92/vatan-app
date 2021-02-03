@@ -83,7 +83,7 @@ const Related = () => {
                   <button
                     key={a.code}
                     className="cartButton"
-                    onClick={context.addProductToCart.bind(this, a.code)}
+                    onClick={context.addProductToCart.bind(this, a)}
                   >
                     {cartButton}
                   </button>

@@ -1,5 +1,6 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import ShopContext from "../Context/shop-context";
+import Cart from "../Cart/cart.component";
 import { Menu, Dropdown, Button, Badge } from "antd";
 import {
   MenuOutlined,
@@ -9,6 +10,7 @@ import {
 import menuItems from "./menuItems.json";
 
 const Header = () => {
+  const [visible, setVisible] = useState(false);
   const context = useContext(ShopContext);
   const cartCount = context.cart.length;
 
@@ -42,12 +44,14 @@ const Header = () => {
               <UserOutlined />
               Üyelik
             </Button>
-            <Button className="account">
+            <Dropdown overlay={(<Cart visible={visible}/>)} trigger={["click"]}>
+            <Button className="account" placement="bottomLeft" onClick={() => setVisible(true)}>
               <Badge showZero count={cartCount} className="cartBadge">
                 <ShoppingCartOutlined />
               </Badge>
               Sepetim
             </Button>
+            </Dropdown>
           </div>
         </div>
       )}
