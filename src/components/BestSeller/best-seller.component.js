@@ -11,6 +11,14 @@ const BestSeller = () => {
   SwiperCore.use([Navigation, Pagination, Controller, Thumbs]);
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [controlledSwiper] = useState(null);
+  const [cartButton, setcartButton] = useState("SEPETE EKLE");
+
+  const buttonHandler = () => {
+    setcartButton("SEPETE EKLENDİ");
+    setTimeout(() => {
+      setcartButton("SEPETE EKLE");
+    }, 2000);
+  }
 
   const slides = [];
 
@@ -51,7 +59,6 @@ const BestSeller = () => {
             <label>BUGÜN KARGODA</label>
           </div>
         )}
-        <a href={element.dest_url}>
           <div className="bestSellerBut">
             <FontAwesomeIcon
               icon={faExchangeAlt}
@@ -59,8 +66,7 @@ const BestSeller = () => {
               style={{ top: "30%", position: "relative" }}
             />
           </div>
-          <button className="cartButton">SEPETE EKLE</button>
-        </a>
+          <button className="cartButton" onClick={buttonHandler}>{cartButton}</button>
       </SwiperSlide>
     );
   });
