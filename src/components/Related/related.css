@@ -123,6 +123,22 @@ li.productGrid img {
   font-size: 11px;
 }
 
+@media only screen and (max-width: 1150px) {
+  .shipping {
+    margin: 0px 20% 7%;
+  }
+}
+
+.relatedPrices {
+  top: 82%;
+  position: absolute;
+  color: #1564C0;
+  font-size: 0.8vw;
+  left: 0;
+  width: 100%;
+  font-weight: 700;
+}
+
 .designProducts:hover .cartButton , .designProducts:hover .buttonSvg {
   cursor: pointer;
   display: block;

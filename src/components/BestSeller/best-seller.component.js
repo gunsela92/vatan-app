@@ -43,9 +43,9 @@ const BestSeller = () => {
           <div
             style={{
               padding: "20px",
-              top: "25%",
+              top: "22%",
               position: "relative",
-              fontSize: "12px",
+              fontSize: "0.7vw",
               textAlign: "center",
             }}
           >

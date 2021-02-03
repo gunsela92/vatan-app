@@ -5,14 +5,7 @@ import { faExchangeAlt, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "./related.css";
 
 const Related = () => {
-  const [cartButton, setcartButton] = useState("SEPETE EKLE");
-
-  const buttonHandler = () => {
-    setcartButton("SEPETE EKLENDİ");
-    setTimeout(() => {
-      setcartButton("SEPETE EKLE");
-    }, 2000);
-  };
+  const cartButton = useState("SEPETE EKLE");
 
   return (
     <ShopContext.Consumer>
@@ -37,7 +30,7 @@ const Related = () => {
                       style={{
                         top: "25%",
                         position: "relative",
-                        fontSize: "10px",
+                        fontSize: "0.6vw",
                         display: "block",
                         color: "gray",
                       }}
@@ -49,7 +42,7 @@ const Related = () => {
                         padding: "20px",
                         top: "25%",
                         position: "relative",
-                        fontSize: "12px",
+                        fontSize: "0.7vw",
                       }}
                     >
                       {a.title}{" "}
@@ -60,19 +53,7 @@ const Related = () => {
                       <label>BUGÜN KARGODA</label>
                     </div>
                   )}
-                  <label
-                    style={{
-                      top: "75%",
-                      position: "absolute",
-                      color: "#1564C0",
-                      fontSize: "1.5em",
-                      left: "0",
-                      width: "100%",
-                      fontWeight: "700",
-                    }}
-                  >
-                    ₺ {a.price}
-                  </label>
+                  <label className="relatedPrices">₺ {a.price}</label>
                   <div className="buttonSvg">
                     <FontAwesomeIcon
                       icon={faExchangeAlt}

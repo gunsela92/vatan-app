@@ -36,7 +36,7 @@ const Slider = () => {
           wrapperTag="ul"
           navigation
           pagination
-          spaceBetween={30}
+          spaceBetween={10}
           slidesPerView={"auto"}
         >
           {slides}

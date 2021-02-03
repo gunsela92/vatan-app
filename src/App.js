@@ -3,6 +3,7 @@ import Related from "./components/Related/related.component";
 import BestSeller from "./components/BestSeller/best-seller.component";
 import Header from "./components/Header/header.component";
 import GlobalState from "./components/Context/bestSeller-context";
+import Footer from "./components/Footer/footer.component";
 import "antd/dist/antd.css";
 import "./App.css";
 
@@ -20,6 +21,7 @@ function App() {
         <Slider />
         <Related />
         <BestSeller />
+        <Footer/>
       </div>
     </GlobalState>
   );
