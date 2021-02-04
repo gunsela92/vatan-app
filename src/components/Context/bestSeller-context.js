@@ -1,11 +1,13 @@
 import React, { useReducer } from "react";
 
 import ShopContext from "./shop-context";
-import { shopReducer, ADD_PRODUCT, REMOVE_PRODUCT } from "./reducers";
+import { shopReducer, ADD_PRODUCT, REMOVE_PRODUCT, ADD_BEST_PRODUCT } from "./reducers";
 import relatedProducts from "../data/relatedProducts.json";
+import bestProducts from "../data/bestSeller.json";
 
 const GlobalState = (props) => {
   const products = relatedProducts;
+  const bestSellers = bestProducts;
   const [cartState, dispatch] = useReducer(shopReducer, { cart: [] });
 
   const addProductToCart = (product) => {
@@ -13,6 +15,12 @@ const GlobalState = (props) => {
       dispatch({ type: ADD_PRODUCT, product: product });
     }, 500);
   };
+
+  const addBestProductToCart = (product) => {
+    setTimeout(() => {
+      dispatch({ type: ADD_BEST_PRODUCT, product: product });
+    }, 500);
+  }
 
   const removeProductFromCart = (productId) => {
     setTimeout(() => {
@@ -25,8 +33,10 @@ const GlobalState = (props) => {
     <ShopContext.Provider
       value={{
         products: products,
+        bestSellers: bestSellers,
         cart: cartState.cart,
         addProductToCart: addProductToCart,
+        addBestProductToCart: addBestProductToCart,
         removeProductFromCart: removeProductFromCart,
       }}
     >
